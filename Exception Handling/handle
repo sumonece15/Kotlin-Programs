@@ -1,1 +1,36 @@
-ssgd
+Kotlin Exception Handling
+Exception is a runtime problem which occurs in the program and leads to program termination. This may be occure due to running out of memory space, array out of bond, condition like divided by zero. To handle this type of problem during program execution the technique of exception handling is used.
+
+Exception handling is a technique which handles the runtime problems and maintains the flow of program execution.
+
+In Kotlin, all exception classes are descendants of class Throwable. To throw an exception object, Kotlin uses the throw expression.
+
+throw MyException("this throws an exception")  
+There are four different keywords used in exception handling. These are:
+
+try
+catch
+finally
+throw
+try: try block contains set of statements which might generate an exception. It must be followed by either catch or finally or both.
+
+catch: catch block is used to catch the exception thrown from try block.
+
+finally: finally block always execute whether exception is handled or not. So it is used to execute important code statement.
+
+throw: throw keyword is used to throw an exception explicitly.
+
+Kotlin Unchecked Exception
+Unchecked exception is that exception which is thrown due to mistakes in our code. This exception type extends RuntimeException class. The Unchecked exception is checked at run time. Following are some example of unchecked exception:
+
+ArithmeticException: thrown when we divide a number by zero.
+ArrayIndexOutOfBoundExceptions: thrown when an array has been tried to access with incorrect index value.
+SecurityException: thrown by the security manager to indicate a security violation.
+NullPointerException: thrown when invoking a method or property on a null object.
+Checked Exception in Java
+Checked exception is checked at compile time. This exception type extends the Throwable class.
+
+Following are some example of unchecked exception:
+
+IOException.
+SQLException etc.
